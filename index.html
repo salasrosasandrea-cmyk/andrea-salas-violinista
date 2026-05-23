@@ -880,7 +880,7 @@
         </ul>
     </nav>
 
-    <!-- Hero - Videos orden: 6,5,7,4,3,2,1 -->
+    <!-- Hero - Videos orden: 6,5,2,9,3,8,1,7,4 -->
     <section class="hero" id="inicio">
         <div class="video-background" id="videoBackground">
             <div class="video-slider">
@@ -896,12 +896,12 @@
                 </div>
                 <div class="video-slide">
                     <video autoplay muted loop playsinline preload="auto">
-                        <source src="video7.mp4" type="video/mp4">
+                        <source src="video2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-slide">
                     <video autoplay muted loop playsinline preload="auto">
-                        <source src="video4.mp4" type="video/mp4">
+                        <source src="video9.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-slide">
@@ -911,12 +911,22 @@
                 </div>
                 <div class="video-slide">
                     <video autoplay muted loop playsinline preload="auto">
-                        <source src="video2.mp4" type="video/mp4">
+                        <source src="video8.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-slide">
                     <video autoplay muted loop playsinline preload="auto">
                         <source src="video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-slide">
+                    <video autoplay muted loop playsinline preload="auto">
+                        <source src="video7.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-slide">
+                    <video autoplay muted loop playsinline preload="auto">
+                        <source src="video4.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -1040,7 +1050,7 @@
         </div>
     </section>
 
-    <!-- Videos - Carrusel manual elegante -->
+    <!-- Videos - Carrusel manual elegante (9 videos) -->
     <section id="videos">
         <div class="section-header">
             <p class="section-number">03</p>
@@ -1056,10 +1066,19 @@
                         <iframe src="https://www.youtube.com/embed/bEmaU4QPEFk" allowfullscreen></iframe>
                     </div>
                     <div class="carousel-slide">
+                        <iframe src="https://www.youtube.com/embed/R5iut60s7kY" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-slide">
                         <iframe src="https://www.youtube.com/embed/v_qpw22ot6Q" allowfullscreen></iframe>
                     </div>
                     <div class="carousel-slide">
+                        <iframe src="https://www.youtube.com/embed/fsYe042s9rg" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-slide">
                         <iframe src="https://www.youtube.com/embed/O_SZwfOEFTw" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-slide">
+                        <iframe src="https://www.youtube.com/embed/B2J24seGASw" allowfullscreen></iframe>
                     </div>
                     <div class="carousel-slide">
                         <iframe src="https://www.youtube.com/embed/sjzLYvOYR4g" allowfullscreen></iframe>
@@ -1082,10 +1101,13 @@
                 <span class="dot" onclick="goToSlide(3)"></span>
                 <span class="dot" onclick="goToSlide(4)"></span>
                 <span class="dot" onclick="goToSlide(5)"></span>
+                <span class="dot" onclick="goToSlide(6)"></span>
+                <span class="dot" onclick="goToSlide(7)"></span>
+                <span class="dot" onclick="goToSlide(8)"></span>
             </div>
             
             <div class="video-counter">
-                <span id="currentVideo">1</span> / <span id="totalVideos">6</span>
+                <span id="currentVideo">1</span> / <span id="totalVideos">9</span>
             </div>
         </div>
     </section>
@@ -1227,7 +1249,7 @@
             }
         });
 
-        // Background video slider - orden: 6,5,7,4,3,2,1
+        // Background video slider - orden: 6,5,7,4,3,2,1,8,9
         let currentBgSlide = 0;
         const bgSlides = document.querySelectorAll('.video-background .video-slide');
         const totalBgSlides = bgSlides.length;
@@ -1256,9 +1278,9 @@
             }
         }
 
-        // Videos Carousel - Manual
+        // Videos Carousel - Manual (9 videos)
         let currentSlide = 0;
-        const totalSlides = 6;
+        const totalSlides = 9;
 
         function updateCarousel() {
             const track = document.getElementById('carouselTrack');
